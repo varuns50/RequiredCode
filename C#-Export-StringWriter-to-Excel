@@ -8,3 +8,11 @@ HtmlTextWriter htw = new HtmlTextWriter(sw);
 GridView1.RenderControl(htw);
 Response.Write(sw.ToString());
 Response.End();
+
+
+
+
+public override void VerifyRenderingInServerForm(Control control)
+{
+	return;
+}
