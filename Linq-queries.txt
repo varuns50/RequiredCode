@@ -1,0 +1,6 @@
+///////////////
+		GET Filtered Datatable from datatable by column value
+            Dim tblFiltered As DataTable
+
+            tblFiltered = ds1.Tables(1).AsEnumerable().Where(Function(r) r.Field(Of Integer)("PID") = 1).CopyToDataTable()
+//////////////
