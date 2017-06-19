@@ -1,0 +1,7 @@
+ var props = ['Period_Flag']; //// Column name to filter
+
+    var notNull = _.negate(_.isNull); //// To ensure we exclude null values
+
+    var groups = _.groupBy(data, function (note) { 
+        return _.find(_.pick(note, props), notNull);
+    }); //// returns grouped data
