@@ -1,0 +1,1 @@
+var s = 'some+multi+word+string'.replace(/\+/g, ' ')
